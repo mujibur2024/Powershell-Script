@@ -1,3 +1,12 @@
+<#
+    Script Name : SBE Driver
+    Description : Cluster node driver version checker
+    Author      : Mujibur Rahman
+    Version     : 1.0
+    Created     : 2025-08-04
+    Trademark   : © Mujibur Rahman. All rights reserved.
+#>
+
 # Target modules relevant to SBE and solution updates
 $targetModules = @(
     "Az.StackHCI", "Az.AksArc", "Az.ConnectedMachine", "Az.Accounts", "Az.Resources", "Az",
@@ -73,4 +82,5 @@ foreach ($moduleName in $targetModules) {
         }
     }
     Write-Host ""
+
 }
